@@ -1,0 +1,12 @@
+
+img{
+  height: 200px;
+  width: 258px;
+}
+.Card{
+border: 2px solid black;
+display: inline-block;
+max-width: 300px;
+margin: 10px;
+text-align: center;
+}
