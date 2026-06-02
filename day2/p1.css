@@ -1,0 +1,12 @@
+body{
+    background: linear-gradient(to left, rgb(195, 167, 167),rgb(160, 160, 191),rgb(175, 223, 175));
+}
+h1{
+    text-align: center;
+    color: bisque;
+    background: rgb(168, 97, 239);
+}
+button{
+    display: block;
+    margin: 0 auto;
+}
