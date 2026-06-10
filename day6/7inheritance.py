@@ -32,7 +32,6 @@ b.nextprince()
 
 
 # ------------------------------------------hybrid inheritance
-# Hybrid Inheritance
 
 class GrandFather:
     def property(self):

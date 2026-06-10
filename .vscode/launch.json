@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "practice",
+            "request": "launch",
+            "mainClass": "day9.practice",
+            "projectName": "PlacementTraining_aadf9558"
+        },
+        {
             "name": "(lldb) Launch",
             "type": "cppdbg",
             "request": "launch",
@@ -16,7 +23,6 @@
             "externalConsole": false,
             "MIMode": "lldb"
         },
-        
         {
             "name": "(lldb) Attach",
             "type": "cppdbg",
@@ -31,6 +37,5 @@
             "program": "enter program name, for example ${workspaceFolder}/a.out",
             "MIMode": "lldb"
         }
-
     ]
 }

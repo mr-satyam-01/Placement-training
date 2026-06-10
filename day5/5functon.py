@@ -16,7 +16,7 @@ def oddeven(list):
 
 oddeven([2,3,4,5,6,7])
 
-# -------------------------reverse
+# --------------------------------reverse
 # a = "satyam"
 # b = ""
 # for i in range(a.len()-1, -1, -1):
@@ -35,7 +35,7 @@ for i in range (0, 10):
      a=b
      b=c
 
-# ------------------------swap
+# --------------------------------swap
 
 def swap(e,f):
      e,f=f,e
@@ -65,7 +65,7 @@ def details(**kwargs):
 details(name="Satyam", age=20, city="Pune")
 
 
-# ------------lambda function(nameless or anonymous -------------lambda arguments: expression
+# ------------lambda function(nameless or anonymous)-------------lambda arguments: expression
 
 addition = lambda a,b:a+b
 print(addition(4,5))
@@ -81,7 +81,7 @@ reversed = lambda string:string[::-1]
 
 print(reversed("satyam"))
 
-# -----------------------------------------------prime 
+# -------------------------------------------------------prime
 # num = int(input("Enter your number: "))
 
 def prime(num):
@@ -98,7 +98,7 @@ def prime(num):
 
 # prime(num)
 
-# ----------------------------------------2nd largest in a list
+# --------------------------------------------------------2nd largest in a list
 def largest(numbers):
     max_num = numbers[0]
 
@@ -110,7 +110,7 @@ def largest(numbers):
 
 print(largest([1, 2, 3, 4, 5, 6, 7]))
 
-# ----------------------------------using lambda uppercase to lowercase-
+# ---------------------------------------------------------using lambda uppercase to lowercase-
 
 # lowercase = lambda string:
 
@@ -133,7 +133,7 @@ def bank(amount):
 bank(100)
 
 
-# -------------------------vowels count 
+# --------------------------------------------vowels count
 def count(word):
     count = 0
     for ch in word:
@@ -144,7 +144,7 @@ def count(word):
 print(count("satyam"))
 
 
-# ----------------------factorial
+# --------------------------------------------factorial
 def factorial(num):
     fact = 1
     for i in range (1, num +1):
@@ -153,7 +153,7 @@ def factorial(num):
         
 print(factorial(5))
 
-# ------------------------------list sort
+# --------------------------------------------list sort
 def sort(numbers):
     for num in numbers:
         for i in range (0,num):
