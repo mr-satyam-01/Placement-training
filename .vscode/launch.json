@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "armstrong",
+            "request": "launch",
+            "mainClass": "day11.armstrong",
+            "projectName": "PlacementTraining_aadf9558"
+        },
+        {
+            "type": "java",
+            "name": "bankingsystem",
+            "request": "launch",
+            "mainClass": "day10.bankingsystem",
+            "projectName": "PlacementTraining_aadf9558"
+        },
+        {
+            "type": "java",
+            "name": "polymorphism",
+            "request": "launch",
+            "mainClass": "day10.polymorphism",
+            "projectName": "PlacementTraining_aadf9558"
+        },
+        {
+            "type": "java",
+            "name": "iphone",
+            "request": "launch",
+            "mainClass": "day10.iphone",
+            "projectName": "PlacementTraining_aadf9558"
+        },
+        {
+            "type": "java",
+            "name": "ATMdenomination",
+            "request": "launch",
+            "mainClass": "day9.ATMdenomination",
+            "projectName": "PlacementTraining_aadf9558"
+        },
+        {
+            "type": "java",
+            "name": "fooditems",
+            "request": "launch",
+            "mainClass": "day9.fooditems",
+            "projectName": "PlacementTraining_aadf9558"
+        },
+        {
+            "type": "java",
+            "name": "vowelcount",
+            "request": "launch",
+            "mainClass": "day9.vowelcount",
+            "projectName": "PlacementTraining_aadf9558"
+        },
+        {
+            "type": "java",
+            "name": "numberGuess",
+            "request": "launch",
+            "mainClass": "day9.numberGuess",
+            "projectName": "PlacementTraining_aadf9558"
+        },
+        {
+            "type": "java",
             "name": "practice",
             "request": "launch",
             "mainClass": "day9.practice",
