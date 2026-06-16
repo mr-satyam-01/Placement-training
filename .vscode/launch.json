@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "library",
+            "request": "launch",
+            "mainClass": "day11.library",
+            "projectName": "PlacementTraining_aadf9558"
+        },
+        {
+            "type": "java",
+            "name": "LongestWord",
+            "request": "launch",
+            "mainClass": "day11.LongestWord",
+            "projectName": "PlacementTraining_aadf9558"
+        },
+        {
+            "type": "java",
             "name": "armstrong",
             "request": "launch",
             "mainClass": "day11.armstrong",
