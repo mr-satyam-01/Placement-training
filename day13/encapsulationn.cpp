@@ -35,7 +35,35 @@ public:
     }
 };
 
-// Multilevel Inheritance
+// Polymorphism----------------------------------------------------------
+
+
+
+class LaptopType {
+public:
+    virtual void purpose() {
+        cout << "Laptop is used for general tasks" << endl;
+    }
+};
+
+class OfficeLaptop : public LaptopType {
+public:
+    void purpose() override {
+        cout << "Office Laptop is used for office work" << endl;
+    }
+};
+
+class StudentLaptop : public LaptopType {
+public:
+    void purpose() override {
+        cout << "Student Laptop is used for studying and assignments" << endl;
+    }
+};
+
+
+
+// Multilevel Inheritance--------------------------------------
+
 class Device {
 public:
     void powerOn() {
@@ -46,7 +74,7 @@ public:
 class Computer : public Device {
 public:
     void processData() {
-        cout << "Processing Data" << endl;
+        cout << "Process the Data" << endl;
     }
 };
 
@@ -57,6 +85,8 @@ public:
     }
 };
 
+
+//--------------------------------------------------------------------------
 int main() {
     cout << "Encapsulation:" << endl;
     Laptop l;
@@ -66,6 +96,21 @@ int main() {
     cout << "\nAbstraction:" << endl;
     StartLaptop s;
     s.start();
+//---------------------------------------------------------------------------
+
+    cout << "\nPolymorphism:" << endl;
+    LaptopType* laptop;
+
+    OfficeLaptop office;
+    StudentLaptop student;
+
+    laptop = &office;
+    laptop->purpose();
+
+    laptop = &student;
+    laptop->purpose();
+
+    //---------------------------------------------------------
 
     cout << "\nMultilevel Inheritance:" << endl;
     GamingLaptop g;
@@ -75,5 +120,3 @@ int main() {
 
     return 0;
 }
-
-
