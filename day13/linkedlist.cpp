@@ -1,42 +1,108 @@
 #include <iostream>
 using namespace std;
 
-class Student {
+class Student
+{
 public:
     int rollNo;
     string name;
-    Student* next;
+    Student *next;
 };
+Student *head = NULL;
+Student *tail = NULL;
+void insertAtBeginning()
+{
+    Student *newNode = new Student();
 
-int main() {
-    // Creating nodes
-    Student* s1 = new Student();
-    Student* s2 = new Student();
-    Student* s3 = new Student();
+    cout << "Enter Roll No: ";
+    cin >> newNode->rollNo;
 
-    // First student
-    s1->rollNo = 101;
-    s1->name = "Satyam";
-    s1->next = s2;
+    cout << "Enter Name: ";
+    cin >> newNode->name;
 
-    // Second student
-    s2->rollNo = 102;
-    s2->name = "Maurya";
-    s2->next = s3;
+    newNode->next = head;
+    head = newNode;
 
-    // Third student
-    s3->rollNo = 103;
-    s3->name = "Priya";
-    s3->next = NULL;
+    if (tail == NULL)
+    {
+        tail = newNode;
+    }
+}
 
-    // Displaying linked list
-    Student* temp = s1;
+void insertInMiddle()
+{
+    if (head == NULL)
+    {
+        cout << "List is empty" << endl;
+        return;
+    }
 
-    while (temp != NULL) {
-        cout << "Roll No: " << temp->rollNo << endl;
-        cout << "Name: " << temp->name << endl;
+    Student *newNode = new Student();
 
-        temp = temp->next;
+    cout << "Enter Roll No: ";
+    cin >> newNode->rollNo;
+
+    cout << "Enter Name: ";
+    cin >> newNode->name;
+
+    Student *temp = head;
+
+    newNode->next = temp->next;
+    temp->next = newNode;
+}
+void createnode()
+{
+    Student *newNode = new Student();
+
+    cout << "Enter Roll No: ";
+    cin >> newNode->rollNo;
+
+    cout << "Enter Name: ";
+    cin >> newNode->name;
+
+    newNode->next = NULL;
+
+    if (head == NULL)
+    {
+        head = newNode;
+        tail = newNode;
+    }
+    else
+    {
+        tail->next = newNode;
+        tail = newNode;
+    }
+    void display()
+    {
+        Student *temp = head;
+
+        while (temp != NULL)
+        {
+            cout << "Roll No: " << temp->rollNo << endl;
+            cout << "Name: " << temp->name << endl;
+            cout << "----------------" << endl;
+
+            temp = temp->next;
+        }
+    }
+    int main()
+    {
+
+        int n;
+        cout << "Enter number of students: ";
+        cin >> n;
+
+        for (int i = 1; i <= n; i++)
+        {
+            createnode();
+        }
+        cout << "\nInsert at beginning" << endl;
+        insertAtBeginning();
+
+        cout << "\nInsert in middle" << endl;
+        insertInMiddle();
+
+        display();
     }
 
     return 0;
